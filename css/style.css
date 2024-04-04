@@ -70,4 +70,44 @@ canvas{
     cursor: pointer;
 }
 
+.botao-cima{
+    display: flex;
+    flex-direction: column-reverse;
+}
 
+.botao-baixo{
+    display: flex;
+}
+
+.botao-filho{
+    display: flex;
+}
+
+#btn-esquerda{
+    border: transparent;
+    height: 50px;
+    width: 50px;
+    font-weight: 900;
+
+}
+
+#btn-direita{
+    border: transparent;
+    height: 50px;
+    width: 50px;
+    font-weight: 900;
+}
+
+#btn-cima{
+    border: transparent;
+    height: 50px;
+    width: 50px;
+    font-weight: 900;
+}
+
+#btn-baixo{
+    border: transparent;
+    height: 50px;
+    width: 50px;
+    font-weight: 900;
+}

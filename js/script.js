@@ -5,6 +5,10 @@ const score = document.querySelector(".score--value")
 const finalScore = document.querySelector(".final-score > span")
 const menu = document.querySelector(".menu-screen")
 const buttonPlay = document.querySelector(".btn-play")
+const buttonCima = document.querySelector("#btn-cima")
+const buttonBaixo = document.querySelector("#btn-baixo")
+const buttonDireita = document.querySelector("#btn-direita")
+const buttonEsquerda = document.querySelector("#btn-esquerda")
 
 const audio = new Audio('../assets/audio.mp3')
 
@@ -202,6 +206,33 @@ document.addEventListener("keydown", ({ key }) => {
 })
 
 
+buttonCima.addEventListener("touchstart", (e) => {
+    if(direction !== "down"){
+        direction = "up"
+    }
+})
+
+buttonBaixo.addEventListener("touchstart", (e) => {
+    if(direction !== "up"){
+        direction = "down"
+    }
+
+})
+
+buttonEsquerda.addEventListener("touchstart", (e) => {
+    if(direction !== "right"){
+        direction = "left"
+    }
+})
+
+buttonDireita.addEventListener("touchstart", (e) => {
+    if(direction !== "left"){
+        direction = "right"
+    }
+})
+
+
+
 buttonPlay.addEventListener("click", () => {
     score.innerText = "00"
     menu.style.display = "none"
@@ -209,4 +240,3 @@ buttonPlay.addEventListener("click", () => {
 
     snake = [inicialPosition]
 })
-
