@@ -70,44 +70,72 @@ canvas{
     cursor: pointer;
 }
 
-.botao-cima{
-    display: flex;
-    flex-direction: column-reverse;
+.btn-geral{
+    display: none;
 }
 
-.botao-baixo{
-    display: flex;
+
+
+@media screen and (max-width: 767px){
+
+    .score{
+        padding: 5% 0;
+        align-items: center;
+    }
+
+    .btn-geral{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .botao-cima{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .botao-baixo{
+        display: flex;
+    }
+    
+    .botao-filho{
+        display: flex;
+    }
+    
+    #btn-esquerda{
+        border: transparent;
+        height: 50px;
+        width: 50px;
+        font-weight: 900;
+    
+    }
+    
+    #btn-direita{
+        border: transparent;
+        height: 50px;
+        width: 50px;
+        font-weight: 900;
+    }
+    
+    #btn-cima{
+        border: transparent;
+        height: 50px;
+        width: 50px;
+        font-weight: 900;
+    }
+    
+    #btn-baixo{
+        border: transparent;
+        height: 50px;
+        width: 50px;
+        font-weight: 900;
+    }
+
 }
 
-.botao-filho{
-    display: flex;
-}
-
-#btn-esquerda{
-    border: transparent;
-    height: 50px;
-    width: 50px;
-    font-weight: 900;
-
-}
-
-#btn-direita{
-    border: transparent;
-    height: 50px;
-    width: 50px;
-    font-weight: 900;
-}
-
-#btn-cima{
-    border: transparent;
-    height: 50px;
-    width: 50px;
-    font-weight: 900;
-}
-
-#btn-baixo{
-    border: transparent;
-    height: 50px;
-    width: 50px;
-    font-weight: 900;
-}
+/* @media screen and (max-width: 320) {
+    canva{
+        height: 35vh;
+        width: 98vw;
+    }
+} */
